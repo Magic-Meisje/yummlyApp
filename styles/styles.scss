@@ -1,0 +1,114 @@
+
+// DESIGN ELEMENTS
+
+// FONTS
+
+// font-family: 'Open Sans', sans-serif;
+
+// font-family: 'Petit Formal Script', cursive;
+
+@import '_setup.scss';
+
+$titleFont: 'Petit Formal Script', cursive;
+$bodyFont: 'Open Sans', sans-serif;
+
+$teal: rgb(85,191,185);
+$grey: rgb(243,242,242);
+$green: rgb(50,88,65);
+
+
+html {
+	font-size: 64.5%;
+}
+
+h1 {
+	font-family: 'Petit Formal Scripts', cursive;
+	font-size: 7rem;
+	margin: 0;
+	color: $teal;
+}
+
+h2 {
+	color: $grey;
+	margin: 0;
+	padding: 30px;
+	font-size: 3rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+p {
+	font-size: 2rem;
+	color: $grey;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+body {
+	background: url(../assets/background1-min.jpg) no-repeat;
+	background-size: cover;
+}
+
+div.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+svg {
+	width: 120px;
+	fill: $grey;
+}
+
+div.both {
+	margin-top: 100px;
+}
+
+div.left {
+	width: 70%;
+}
+
+div.tag {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+div.right {
+	margin: 150px auto;
+}
+
+form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	padding: 30px;
+	select {
+		margin: 20px;
+	}
+	input {
+		margin: 20px;
+	}
+}
+
+legend {
+	text-align: center;
+	color: $grey;
+	font-family: $bodyFont;
+	font-size: 2rem;
+}
+
+// fieldset {
+// 	background: rgba(50,88,65,.6);
+// }
+
+// IF WE WANT THE BACKGROUND OF THE FORM TO BE A SHADE USE THE FIELDSET
+
+
+
+
+
+
+
+
+
