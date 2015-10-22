@@ -80,11 +80,12 @@ body {
 }
 
 div.wrapper {
-	width: 90%;
+	max-width: 1120px;
 	margin: 0 auto;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+}
+
+header {
+	@extend .flexParent;
 }
 
 svg {
@@ -129,9 +130,17 @@ legend {
 	font-size: 2rem;
 }
 
-// fieldset {
-// 	background: rgba(50,88,65,.6);
-// }
+.recipeSection {
+	@extend .flexParent;
+	justify-content: space-between;
+	div {
+		width: 22%;
+	}
+}
+
+.hide {
+	display: none;
+}
 
 // IF WE WANT THE BACKGROUND OF THE FORM TO BE A SHADE USE THE FIELDSET
 
