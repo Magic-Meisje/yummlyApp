@@ -127,7 +127,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 * {
   box-sizing: border-box; }
 
-.flexParent {
+.flexParent, header, .recipeSection {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -164,17 +164,8 @@ body {
   background-size: cover; }
 
 div.wrapper {
-  width: 90%;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  max-width: 1120px;
+  margin: 0 auto; }
 
 svg {
   width: 120px;
@@ -218,3 +209,13 @@ legend {
   color: #f3f2f2;
   font-family: "Open Sans", sans-serif;
   font-size: 2rem; }
+
+.recipeSection {
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .recipeSection div {
+    width: 22%; }
+
+.hide {
+  display: none; }
