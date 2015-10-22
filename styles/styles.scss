@@ -9,6 +9,37 @@
 
 @import '_setup.scss';
 
+@mixin fontSize($fontSize) {
+	font-size: $fontSize * 1px;
+	font-size: ($fontSize / 10) *1rem;
+}
+
+@mixin bp($point) {
+  $large: "(max-width: 960px)";
+  $medium: "(max-width: 768px)";
+  $small: "(max-width: 480px)";
+  $mobile: "(max-width: 320px)";
+
+  @if $point == large {
+    @media #{$large} { @content; }
+  }
+  @else if $point == medium {
+    @media #{$medium} { @content; }
+  }
+  @else if $point == small {
+    @media #{$small}  { @content; }
+  }
+  @else if $point == mobile {
+  	@media #{$mobile} { @content; }
+  }
+}
+
+.flexParent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 $titleFont: 'Petit Formal Script', cursive;
 $bodyFont: 'Open Sans', sans-serif;
 
