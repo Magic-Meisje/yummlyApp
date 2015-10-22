@@ -20,7 +20,6 @@ yummlyApp.getRecipes = function() {
 };
 
 yummlyApp.userDietarySubmit = function() {
-
 	$("#dietarySelection").on("submit", function(e) {
 		e.preventDefault();
 		if ($('#diets').val() === 'vegan' || 'vegetarian') {
@@ -31,11 +30,10 @@ yummlyApp.userDietarySubmit = function() {
 		yummlyApp.userInputSearch = $('#userSearch').val();
 		console.log(yummlyApp.userInputSearch);
 
-		yummlyApp.getRecipes();
-
 		$('main section h3, main section p').fadeIn(1000);
 		$('header').addClass('hide');
 	});
+	yummlyApp.getRecipes();
 };
 
 yummlyApp.init = function() {
