@@ -127,6 +127,20 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 * {
   box-sizing: border-box; }
 
+<<<<<<< HEAD
+=======
+.flexParent {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+>>>>>>> 82bf48ea05b641e232c503264f8a1575fd8e7494
 html {
   font-size: 64.5%; }
 
