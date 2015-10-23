@@ -11,6 +11,7 @@ yummlyApp.getRecipes = function(userSearch, diet, allergy) {
          _app_id: '051fb3a8',
          _app_key: '0827bd8424e3ad1432cc27d19823deda',
          requirePictures: true,
+         id: "Pizza-Dough-1347076",
          q: userSearch,
          allowedDiet: diet,
          allowedAllergy: allergy,
@@ -21,6 +22,15 @@ yummlyApp.getRecipes = function(userSearch, diet, allergy) {
 	});
 };
 
+var UserRecipeID = (recipes.id)
+
+$.ajax({
+	url: 'http://api.yummly.com/v1/api/recipe/'+UserRecipeID+'_app_id:051fb3a8&_app_key:0827bd8424e3ad1432cc27d19823deda',
+	dataType: 'jsonp',
+	method: 'GET',
+}).then(function(result) {
+	yummlyApp.GoOutside(result.attribution.url);
+});
 // yummlyApp.displayRecipes = function(){
 
 // };

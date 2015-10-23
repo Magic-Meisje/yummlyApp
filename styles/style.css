@@ -127,13 +127,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 * {
   box-sizing: border-box; }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-.flexParent {
-=======
 .flexParent, header, .recipeSection {
->>>>>>> 53d998cbfcac2280afb4775890f36a93227b5408
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -144,7 +138,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       -ms-flex-direction: row;
           flex-direction: row; }
 
->>>>>>> 82bf48ea05b641e232c503264f8a1575fd8e7494
 html {
   font-size: 64.5%; }
 
