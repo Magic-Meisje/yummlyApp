@@ -1,7 +1,7 @@
 var yummlyApp = {};
 
 yummlyApp.getRecipes = function(diet, allergy, userSearch) {
-	console.log(diet);
+	console.log(userSearch);
 	$.ajax({
      url: 'https://api.yummly.com/v1/api/recipes',
      dataType: 'jsonp',
