@@ -53,18 +53,45 @@ html {
 }
 
 h1 {
-	font-family: 'Petit Formal Scripts', cursive;
-	font-size: 7rem;
+	font-family: 'Petit Formal Script', cursive;
+	font-size: 6rem;
 	margin: 0;
-	color: $teal;
+	color: white;
+	font-weight: lighter;
+	width: 100%;
+	text-align: center;
+	padding-top: 5%;
 }
 
-h2 {
+h2.main {
 	color: $grey;
-	margin: 0;
-	padding: 30px;
-	font-size: 3rem;
+	padding: 10px;
+	font-size: 2rem;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 0 22%;
+	width: 100%;
+	text-align: center;
+}
+
+.wrapper {
+	margin: 0 auto;
+	
+}
+
+h3.main {
+	font-family: 'Open Sans', sans-serif;
+	color: $grey;
+	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 60%;
+	margin: 40px auto;
+	font-weight: 300;
+	letter-spacing: 1px;
 }
 
 p {
@@ -77,6 +104,8 @@ p {
 body {
 	background: url(../assets/background1-min.jpg) no-repeat;
 	background-size: cover;
+	// background-color: $teal;
+	// background-blend-mode: multiply;
 }
 
 div.wrapper {
@@ -89,32 +118,34 @@ header {
 }
 
 svg {
-	width: 120px;
-	fill: $grey;
-}
+	width: 100px;
+	fill: white;
+	margin: 0;
+	margin-left: 65%;
+	
 
-div.both {
-	margin-top: 100px;
+
+	// margin: 20px;
 }
 
 div.left {
 	width: 70%;
 }
 
-div.tag {
-	display: flex;
-	flex-wrap: wrap;
-}
+// div.tag {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// }
 
 div.right {
-	margin: 150px auto;
+	margin: 0 auto;
 }
 
 form {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	padding: 30px;
+	padding: 20px 100px;
 	select {
 		margin: 20px;
 	}
@@ -123,12 +154,6 @@ form {
 	}
 }
 
-legend {
-	text-align: center;
-	color: $grey;
-	font-family: $bodyFont;
-	font-size: 2rem;
-}
 
 .recipeSection {
 	@extend .flexParent;
@@ -142,13 +167,82 @@ legend {
 	display: none;
 }
 
+.underline {
+	width: 200px;
+	height: 3px;
+	margin: 10px;
+	background: $teal;
+	margin: 2% 40%;
+}
 // IF WE WANT THE BACKGROUND OF THE FORM TO BE A SHADE USE THE FIELDSET
+select, input {
+	background: white;
+	color: $teal;
+	border: none;
+	border-radius: 5px;
+	font-size: 1.4rem;
+	width: 400px;
+	height: 40px;
+	text-align: center;
+}
 
+input.submit {
+	width: 150px;
+	background: $teal;
+	border: 3px solid white;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1px;
+	font-weight: 400;
+	margin: 25px auto;
+	text-transform: uppercase;
+	color: $grey;
 
+}
 
+.receipeDisplaySection {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	div {
+		max-width: 50%;
+		border: 3px solid white;
+		margin-bottom: 10px;
+		h3 {
+			font-size: 2rem;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			text-align: center;
+			border-bottom: 2px solid $grey;
+			text-transform: uppercase;
+			width: 60%;
+			margin: 10px auto;
+		}
+	}
+}
 
+.receipeDisplaySection p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.8rem;
+	text-align: center;
+	padding: 0;
+	margin: 7px;
+}
 
+main.container {
+	max-width: 1120px;
+	margin: 200px 0;
+	a {
+		text-decoration: none;
+		color: $grey;
+		a:visited {
+			text-decoration: none;
+			color: white;
+		}
+	}
+}
 
-
-
+img {
+	width: 500px;
+	height: 350px;
+}
 
