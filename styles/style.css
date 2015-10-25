@@ -142,17 +142,41 @@ html {
   font-size: 64.5%; }
 
 h1 {
-  font-family: 'Petit Formal Scripts', cursive;
-  font-size: 7rem;
+  font-family: 'Petit Formal Script', cursive;
+  font-size: 6rem;
   margin: 0;
-  color: #55bfb9; }
+  color: white;
+  font-weight: lighter;
+  width: 100%;
+  text-align: center;
+  padding-top: 5%; }
 
-h2 {
+h2.main {
   color: #f3f2f2;
-  margin: 0;
-  padding: 30px;
-  font-size: 3rem;
-  font-family: 'Open Sans', sans-serif; }
+  padding: 10px;
+  font-size: 2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0 22%;
+  width: 100%;
+  text-align: center; }
+
+.wrapper {
+  margin: 0 auto; }
+
+h3.main {
+  font-family: 'Open Sans', sans-serif;
+  color: #f3f2f2;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 60%;
+  margin: 40px auto;
+  font-weight: 300;
+  letter-spacing: 1px; }
 
 p {
   font-size: 2rem;
@@ -168,25 +192,16 @@ div.wrapper {
   margin: 0 auto; }
 
 svg {
-  width: 120px;
-  fill: #f3f2f2; }
-
-div.both {
-  margin-top: 100px; }
+  width: 100px;
+  fill: white;
+  margin: 0;
+  margin-left: 65%; }
 
 div.left {
   width: 70%; }
 
-div.tag {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
-
 div.right {
-  margin: 150px auto; }
+  margin: 0 auto; }
 
 form {
   display: -webkit-flex;
@@ -198,17 +213,11 @@ form {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 30px; }
+  padding: 20px 100px; }
   form select {
     margin: 20px; }
   form input {
     margin: 20px; }
-
-legend {
-  text-align: center;
-  color: #f3f2f2;
-  font-family: "Open Sans", sans-serif;
-  font-size: 2rem; }
 
 .recipeSection {
   -webkit-justify-content: space-between;
@@ -219,3 +228,76 @@ legend {
 
 .hide {
   display: none; }
+
+.underline {
+  width: 200px;
+  height: 3px;
+  margin: 10px;
+  background: #55bfb9;
+  margin: 2% 40%; }
+
+select, input {
+  background: white;
+  color: #55bfb9;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  width: 400px;
+  height: 40px;
+  text-align: center; }
+
+input.submit {
+  width: 150px;
+  background: #55bfb9;
+  border: 3px solid white;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 25px auto;
+  text-transform: uppercase;
+  color: #f3f2f2; }
+
+.receipeDisplaySection {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .receipeDisplaySection div {
+    max-width: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px; }
+    .receipeDisplaySection div h3 {
+      font-size: 2rem;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      text-align: center;
+      border-bottom: 2px solid #f3f2f2;
+      text-transform: uppercase;
+      width: 60%;
+      margin: 10px auto; }
+
+.receipeDisplaySection p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0;
+  margin: 7px; }
+
+main.container {
+  max-width: 1120px;
+  margin: 200px 0; }
+  main.container a {
+    text-decoration: none;
+    color: #f3f2f2; }
+    main.container a a:visited {
+      text-decoration: none;
+      color: white; }
+
+img {
+  width: 500px;
+  height: 350px; }
