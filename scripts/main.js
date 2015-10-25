@@ -34,6 +34,10 @@ yummlyApp.getRecipes = function(diet, allergy, userSearch) {
 			var recipeLink = $('<div>').append(recipeContainer);
 			$('#recipeDisplaySection').append(recipeLink);
 		});
+
+		$('.reset').on('click', function() {
+			window.location.reload(true);
+		});
 	});
 };
 
