@@ -213,14 +213,23 @@ form {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 100px; }
+  padding: 4%; }
   @media (max-width: 480px) {
     form {
-      width: 50%; } }
+      padding: 0; } }
   form select {
     margin: 20px; }
+    @media (max-width: 480px) {
+      form select {
+        width: 80%; } }
+    @media (max-width: 435px) {
+      form select {
+        width: 80%; } }
   form input {
     margin: 20px; }
+    @media (max-width: 480px) {
+      form input {
+        width: 80%; } }
 
 .recipeSection {
   -webkit-justify-content: space-between;
