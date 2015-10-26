@@ -141,19 +141,27 @@ div.right {
 	margin: 0 auto;
 }
 
+// QUESTION HERE ABOUT THE SIZE OF THE FORM AT SMALL???
+
 form {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
 	padding: 20px 100px;
+	@include bp(small) {
+	width: 50%;
+	}
 	select {
 		margin: 20px;
+		@include bp(small) {
+		width: 50%;
 	}
 	input {
 		margin: 20px;
+		@include bp(small) {
+		width: 50%;
 	}
 }
-
 
 .recipeSection {
 	@extend .flexParent;
@@ -186,6 +194,20 @@ select, input {
 	text-align: center;
 }
 
+
+// THIS IS THE RESET SEARCH AGAIN DIV
+
+div.thereset {
+	text-align: center;
+}
+
+input.reset {
+	width: 20%;
+	margin-top: 30px;
+}
+
+// THIS IS THE END END OF THE RESET SEARCH AGAIN DIV
+
 input.submit {
 	width: 150px;
 	background: $teal;
@@ -204,9 +226,9 @@ input.submit {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	div {
-		max-width: 50%;
+		width: 250px;
 		border: 3px solid white;
-		margin-bottom: 10px;
+		margin-bottom: 30px;
 		h3 {
 			font-size: 2rem;
 			font-family: 'Open Sans', sans-serif;
@@ -220,6 +242,28 @@ input.submit {
 	}
 }
 
+.receipeDisplaySection div:hover {
+	transform: scale(1.05);
+	z-index: 99999;
+}
+
+div.images {
+	position: relative;
+}
+
+div.images:after {
+	content: '';
+	display: block;
+	padding-top: 100%;
+}
+
+div.images img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	object-fit: cover;
+}
+
 .receipeDisplaySection p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.8rem;
@@ -228,9 +272,22 @@ input.submit {
 	margin: 7px;
 }
 
+.tagline p {	
+	color: lightgrey;
+	font-size: .5rem;
+	text-align: center;
+}
+
 main.container {
 	max-width: 1120px;
 	margin: 200px 0;
+	h2 {
+		color: white;
+		text-align: center;
+		font-size: 5rem;
+		text-decoration: underline;
+		font-family: 'Open Sans', sans-serif;
+	}
 	a {
 		text-decoration: none;
 		color: $grey;
@@ -242,7 +299,7 @@ main.container {
 }
 
 img {
-	width: 500px;
-	height: 350px;
+	max-width: 100%;
+	display: block;
 }
 

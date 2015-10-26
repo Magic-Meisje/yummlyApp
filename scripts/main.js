@@ -1,5 +1,7 @@
 var yummlyApp = {};
 
+
+
 yummlyApp.getRecipes = function(diet, allergy, userSearch) {
 	console.log(userSearch);
 	$.ajax({
@@ -25,10 +27,11 @@ yummlyApp.getRecipes = function(diet, allergy, userSearch) {
 			recipeImg = recipeImg + '400';
 
 			var img = $('<img>').attr('src', recipeImg);
+			var imgcontainer = $('<div>').addClass("images").append(img);
 			var recipeName = $('<h3>').text(value.recipeName);
 			var rating = $('<p>').text(value.rating + '/5 stars');
 			var time = $('<p>').text(value.totalTimeInSeconds/100 + 'min');
-			var recipeContainer = $('<a>').addClass('recipeLink').attr('href', 'http://www.yummly.com/recipe/'+ value.id).attr('target', '_blank').append(img, recipeName, rating, time);
+			var recipeContainer = $('<a>').addClass('recipeLink').attr('href', 'http://www.yummly.com/recipe/'+ value.id).attr('target', '_blank').append(imgcontainer, recipeName, rating, time);
 			var recipeLink = $('<div>').append(recipeContainer);
 			$('#recipeDisplaySection').append(recipeLink);
 		});
@@ -44,10 +47,10 @@ yummlyApp.userDietarySubmit = function() {
 		e.preventDefault();
 			if ($('#diets option:selected').attr('data-type') === 'diet') {
 				var diet = $("#diets").val();
-				var allergy = null
+				var allergy = null;
 				// console.log(diet);
 			} else if ($('#diets option:selected').attr('data-type') === 'allergy') {
-				var diet = null
+				var diet = null;
 				var allergy = $("#diets").val();
 			} 
 			// console.log(diet);
