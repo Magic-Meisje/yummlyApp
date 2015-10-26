@@ -18,7 +18,7 @@
   $large: "(max-width: 960px)";
   $medium: "(max-width: 768px)";
   $small: "(max-width: 480px)";
-  $mobile: "(max-width: 320px)";
+  $mobile: "(max-width: 435px)";
 
   @if $point == large {
     @media #{$large} { @content; }
@@ -122,22 +122,14 @@ svg {
 	fill: white;
 	margin: 0;
 	margin-left: 65%;
-	
-
-
-	// margin: 20px;
 }
 
 div.left {
 	width: 70%;
 }
 
-// div.tag {
-// 	display: flex;
-// 	flex-wrap: wrap;
-// }
-
 div.right {
+	// width: 100%;
 	margin: 0 auto;
 }
 
@@ -147,21 +139,32 @@ form {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
-	padding: 20px 100px;
+	padding: 4%;
 	@include bp(small) {
-	width: 50%;
+		// width: 50%;
+		padding: 0;
+	}
+	@include bp(mobile) {
+		// width: 90%;
 	}
 	select {
 		margin: 20px;
 		@include bp(small) {
-		width: 50%;
+			width: 80%;
+		}
+		@include bp(mobile) {
+			width: 80%;
+		}
 	}
 	input {
 		margin: 20px;
 		@include bp(small) {
-		width: 50%;
+			width: 80%;
+		}
 	}
 }
+
+
 
 .recipeSection {
 	@extend .flexParent;
