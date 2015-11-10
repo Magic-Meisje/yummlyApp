@@ -32,7 +32,7 @@ yummlyApp.getRecipes = function(diet, allergy, userSearch) {
 			var rating = $('<p>').text(value.rating + '/5 stars');
 			var time = $('<p>').text(value.totalTimeInSeconds/100 + 'min');
 			var recipeContainer = $('<a>').addClass('recipeLink').attr('href', 'http://www.yummly.com/recipe/'+ value.id).attr('target', '_blank').append(imgcontainer, recipeName, rating, time);
-			var recipeLink = $('<div>').append(recipeContainer);
+			var recipeLink = $('<div>').addClass('containeroverall').append(recipeContainer);
 			$('#recipeDisplaySection').append(recipeLink);
 		});
 

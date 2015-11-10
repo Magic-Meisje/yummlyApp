@@ -5,6 +5,7 @@
 	<title>Dinner Party Planner</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,700|Petit+Formal+Script' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 </head>
 <body>
 
@@ -39,7 +40,7 @@
 							<option value="398^Seafood-Free" data-type="allergy">Seafood Allergy</option>
 							<option value="393^Gluten-Free" data-type="allergy">Gluten Free</option>
 						</select>
-						<input type="search" name="blank" id="userSearch">
+						<input type="search" name="blank" id="userSearch" placeholder="Search">
 						<input type="submit" class="submit" id="submitButton">
 					</form>
 				</div>
@@ -48,9 +49,12 @@
 
 		<main class="container">
 
+			<h1>Dinner Party Planner</h1>
+				<div class="underline"></div>
+
 			<h2>Recipes</h2>
 
-			<section class="receipeDisplaySection" id="recipeDisplaySection"></section>
+			<section class="receipeDisplaySection wow fadeInUp" id="recipeDisplaySection"></section>
 
 			<div class="thereset">
 				<input type="reset" class="reset" value="Search Again!">
@@ -58,7 +62,12 @@
 		</main>
 
 		<div class="tagline">
-			<p>Created by Stacie Campbell, Amie Phipps & Tom Haxell</p>
+			<p>Created by <a href="http://www.staciecampbell.ca">Stacie Campbell</a>, <a href="http://www.amiephipps.com">Amie Phipps</a> & <a href="http://www.tomhaxell.com">Tom Haxell</a></p>
+		</div>
+		<div class="yummly">
+			<p>Application built using the</p>
+			<a href="http://www.yummly.com"><img src="assets/yummly_logo.png" alt="Yummly logo with link to Yummly site."></a>
+			<p>API.</p>
 		</div>
 	</div> <!-- THIS IS THE CLOSING WRAPPER DIV -->
 
@@ -67,6 +76,8 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="scripts/main.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script>new WOW().init();</script>
 
 </body>
 </html>
