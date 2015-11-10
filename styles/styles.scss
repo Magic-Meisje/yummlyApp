@@ -122,6 +122,9 @@ svg {
 	fill: white;
 	margin: 0;
 	margin-left: 65%;
+	@include bp(small) {
+			margin-left: 50%;
+		}
 }
 
 div.left {
@@ -164,6 +167,30 @@ form {
 	}
 }
 
+::-webkit-input-placeholder {
+   color: $teal;
+   text-align: left;
+   padding-left: 8px;
+}
+
+:-moz-placeholder { 
+   color: $teal;  
+   text-align: left;
+   padding-left: 8px;
+}
+
+::-moz-placeholder {  
+   color: $teal;  
+   text-align: left;
+   padding-left: 8px;
+}
+
+:-ms-input-placeholder {  
+   color: $teal;  
+   text-align: left;
+   padding-left: 8px;
+}
+
 
 
 .recipeSection {
@@ -171,6 +198,7 @@ form {
 	justify-content: space-between;
 	div {
 		width: 22%;
+		border: none;
 	}
 }
 
@@ -184,6 +212,9 @@ form {
 	margin: 10px;
 	background: $teal;
 	margin: 2% 40%;
+	@include bp(small) {
+			margin: 0 auto;
+		}
 }
 // IF WE WANT THE BACKGROUND OF THE FORM TO BE A SHADE USE THE FIELDSET
 select, input {
@@ -207,6 +238,9 @@ div.thereset {
 input.reset {
 	width: 20%;
 	margin-top: 30px;
+	@include bp(small) {
+			width: 30%;
+		}
 }
 
 // THIS IS THE END END OF THE RESET SEARCH AGAIN DIV
@@ -229,15 +263,14 @@ input.submit {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	div {
-		width: 250px;
-		border: 3px solid white;
+		max-width: 250px;
 		margin-bottom: 30px;
 		h3 {
 			font-size: 2rem;
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 400;
 			text-align: center;
-			border-bottom: 2px solid $grey;
+			border-bottom: 2px solid $teal;
 			text-transform: uppercase;
 			width: 60%;
 			margin: 10px auto;
@@ -247,6 +280,7 @@ input.submit {
 
 .receipeDisplaySection div:hover {
 	transform: scale(1.05);
+	transition-duration: 1s;
 	z-index: 99999;
 }
 
@@ -258,6 +292,11 @@ div.images:after {
 	content: '';
 	display: block;
 	padding-top: 100%;
+	border: none;
+}
+
+div.containeroverall {
+	border: 2px solid white;
 }
 
 div.images img {
@@ -281,9 +320,11 @@ div.images img {
 	text-align: center;
 }
 
+
+
 main.container {
 	max-width: 1120px;
-	margin: 200px 0;
+	margin: 0;
 	h2 {
 		color: white;
 		text-align: center;
@@ -301,8 +342,35 @@ main.container {
 	}
 }
 
+div.tagline p a {
+	text-decoration: none;
+	color: lightgrey;
+}
+
 img {
 	max-width: 100%;
 	display: block;
+	border: none;
 }
+
+div.yummly {
+	display: flex;
+	margin: 10px 0;	
+	justify-content: center;
+	img{
+		width: 60px;
+		height: 20px;	
+		margin: 8px 4px 0px 4px;	
+	}
+	p {
+		font-size: .5rem;	
+		line-height: 2;
+		color: lightgrey;	
+	}
+	a {
+		text-decoration: none;
+	}
+}
+
+
 
